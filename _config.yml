@@ -4,20 +4,20 @@ gems:
   - jekyll-paginate
 
 # Site settings
-title: "Mediator"
+title: "Wlsellfe Joon Tech Blog"
 description: > # this means to ignore newlines until "email:"
-   A Jekyll theme - Medium inspired
+   Automotive Security, Artificial_DNN and C/C++/C#/Python
 
-email: a-mail@mail.mail
+email: kyj20177@hanmail.net
 #blog logo
 logo: "/assets/images/df_logo.jpg"
 float_logo: true # true, false (default)
 
 # blog cover
-cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
+cover: "/assets/images/Background.jpg"
 
-name: 'Dirk Fabisch'
-author: 'Dirk Fabisch'
+name: 'YongJun Kim'
+author: 'YongJun Kim'
 author_image: "/assets/images/author.jpg"
 
 paginate:	5
@@ -34,12 +34,12 @@ twitter_handle: '@dirkfabisch'
 
 # social icons and sharing options
 social:
-  - icon:	twitter
-    url:	https://twitter.com/dirkfabisch
-    desc: Follow me on twitter
-    share_url: http://twitter.com/share
-    share_title: ?text=
-    share_link: "&amp;url="
+#   - icon:	twitter
+#     url:	https://twitter.com/dirkfabisch
+#     desc: Follow me on twitter
+#     share_url: http://twitter.com/share
+#     share_title: ?text=
+#     share_link: "&amp;url="
 
 #  - icon:	facebook
 #    url:	https://facebook.com/???
@@ -49,7 +49,7 @@ social:
 #    share_link: "&amp;u="
 
   - icon:	github
-    url:	https://github.com/dirkfabisch
+    url:	https://github.com/Wlsellfe-joon
     desc:	Fork me on github
     share_url:
     share_title:

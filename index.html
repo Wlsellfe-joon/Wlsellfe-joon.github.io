@@ -1,14 +1,9 @@
 ---
-bg: "rails.jpg"
 layout: default
-crawlertitle: "Jekyll blog"
-title: "Voyager"
-summary: "main page"
+title: Fork, Clone & Enjoy.
+description: Minimalistic Jekyll theme for your blog with plenty of features. Easy to install and setup.
 ---
 
-{% for post in site.posts limit: 5 %}
-  <article class="index-page">
-    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-    {{ post.excerpt }}
-  </article>
+{% for page in paginator.posts %}
+{% include articles.html %}
 {% endfor %}

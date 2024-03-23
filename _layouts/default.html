@@ -1,22 +1,22 @@
----
-layout: compress
----
 <!DOCTYPE html>
-<html lang="{{ site.lang }}">
-
-  {% include head.html %}
-
-  <body>
-    <div id="shadow"></div>
-
-      {% include header.html %}
-      {% include aside.html %}
-
-    <main class="content-wrapper blog-content">
-      {{ content }}
+<html lang="en">
+{% include head.html %}
+<body style="background: url('{{ site.baseurl }}/resources/images/main_front.jpg') no-repeat fixed;
+                            background-size: cover">
+<div id="wrapper">
+    {% include header.html %}
+    <main id="start">
+        <div class="articles">
+            {{ content }}
+        </div>
     </main>
-
-    {% include footer.html %}
-
-  </body>
+        {% include paginator.html %}
+    <footer>
+        {% include footer.html %}
+    </footer>
+</div>
+{% if site.disqus %}
+<script id="dsq-count-scr" src="//{{ site.disqus }}.disqus.com/count.js" async></script>
+{% endif %}
+</body>
 </html>

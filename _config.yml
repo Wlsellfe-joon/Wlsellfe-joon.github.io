@@ -1,63 +1,43 @@
-# Build settings
-gems:
-  - jemoji
-  - jekyll-paginate
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: "Wlsellfe Joon Tech Blog"
-description: > # this means to ignore newlines until "email:"
-   Automotive Security, Artificial_DNN and C/C++/C#/Python
+title: Your awesome title
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+lang: "en"
+url: "http://localhost:4000" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+disqus_username:
 
-email: kyj20177@hanmail.net
-#blog logo
-logo: "/assets/images/YJ_logo_2.svg"
-float_logo: false # true, false (default)
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
 
-# blog cover
-cover: "/assets/images/Background.jpg"
+# Posts settings
+future: true
+safe: false
+lsi: false
+excerpt_separator: "\n\n"
 
-name: 'YongJun Kim'
-author: 'YongJun Kim'
-author_image: "/assets/images/author.jpg"
+# Theme settings
+compress_html:
+  comments: ["<!-- ", " -->"]
+  clippings: all
+  endings: all
 
-paginate:	10
 
-url: "https://wlsellfe-joon.github.io/" # the base hostname & protocol for your site
-baseurl: ""
-#used to display twitter cards
-twitter_handle: '@dirkfabisch'
+sass:
+  style: compressed
 
-#fill in disqus shortname to use disqus
-#disqus: disqus-shortname
 
-#google_analytics: UA-XXXXX-X
-
-# social icons and sharing options
-social:
-#   - icon:	twitter
-#     url:	https://twitter.com/dirkfabisch
-#     desc: Follow me on twitter
-#     share_url: http://twitter.com/share
-#     share_title: ?text=
-#     share_link: "&amp;url="
-
-#  - icon:	facebook
-#    url:	https://facebook.com/???
-#    desc: Connect with me facebook
-#    share_url: https://www.facebook.com/sharer.php
-#    share_title: ?t=
-#    share_link: "&amp;u="
-
-  - icon:	github
-    url:	https://github.com/Wlsellfe-joon
-    desc:	Fork me on github
-    share_url:
-    share_title:
-    share_link:
-
-#  - icon:	google-plus
-#    url:	https://google.com/???
-#    desc:	Add me on google+
-#    share_url:
-#    share_title:
-#    share_link:
+images: '/assets/images'

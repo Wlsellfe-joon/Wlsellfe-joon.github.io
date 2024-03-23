@@ -1,6 +1,7 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-# 'github-pages' includes 'jekyll' gem 
-gem 'github-pages'
-gem 'bourbon'
-gem 'jemoji'
+source "https://rubygems.org"
+gemspec
+
+gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
+gem "webrick", "~> 1.7"

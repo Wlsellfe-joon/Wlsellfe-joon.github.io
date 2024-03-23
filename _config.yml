@@ -4,14 +4,14 @@ gems:
   - jekyll-paginate
 
 # Site settings
-title: "Wlsellfe Joon Tech Blog"
+title: "Technical Blog"
 description: > # this means to ignore newlines until "email:"
    Automotive Security, Artificial_DNN and C/C++/C#/Python
 
 email: kyj20177@hanmail.net
 #blog logo
 logo: "/assets/images/YJ_logo_2.svg"
-float_logo: true # true, false (default)
+float_logo: false # true, false (default)
 
 # blog cover
 cover: "/assets/images/Background.jpg"

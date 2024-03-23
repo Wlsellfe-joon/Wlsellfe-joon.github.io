@@ -4,7 +4,7 @@
 ##########################################
 
 # Set this for Copyright in the footer
-owner: Name Surname
+owner: YONGJUN KIM
 
 # Optional quote in the footer
 # To disable set enable to false
@@ -15,7 +15,7 @@ quote:
 
 # Set this to your main site title. If page doesn't have its own title,
 # then this title will be used.
-title: Aliquam Theme
+title: Wlsellfe Joon Tech Blog
 
 
 # Following needed for disqus integration
@@ -45,7 +45,7 @@ contact_PK:
 ##########################################
 
 # Set maximum posts per page
-paginate: 5
+paginate: 100
 
 # Set permalink
 permalink: /:categories/:title

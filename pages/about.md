@@ -4,8 +4,9 @@ title: About
 description: More information about me and this website.
 ---
 
-I am ...
+YongJun Kim
+Interest: Automotive security, Artificial Neural Networks, Computer Science
 
 ## Contact form
 
-{% include contact_form.html %}
+<!-- {% include contact_form.html %} -->

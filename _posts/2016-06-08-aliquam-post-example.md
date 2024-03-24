@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A quick view of aliquam post
-category: Automotive
+category: DeepLearning
 comments: true
 description: This page is only for demonstration purposes. It shows the styling of all the components found in Aliquam theme.
 tags:

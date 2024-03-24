@@ -4,7 +4,7 @@
             <li><a class="fancy-nav" href="{{ site.baseurl }}/index.html">home</a></li>
             {% for link in site.categories %}
             <li><a class="fancy-nav" href="{{ site.baseurl }}/categories/{{ link | first | downcase }}">{{ link | first
-                }}</a></li>
+                }} {{link | last | size}}</a></li>
             {% endfor %}
             <li><a class="fancy-nav" href="{{ site.baseurl }}/pages/about.html">about</a></li>
         </ul>

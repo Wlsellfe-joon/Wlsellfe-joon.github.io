@@ -194,11 +194,11 @@ social:
 protocols:
     fb_image: "/assets/logo.svg"
     fb_image_width: 612
-    fb_image_height: 605
-    fb_image_type: "image/png"
+    fb_image_height: 612
+    fb_image_type: "image/svg"
 
-    twitter_image: "/assets/logo.svg"
+    # twitter_image: "/assets/logo.svg"
 
-    os_repo: "https://github.com/bencentra/centrarium.com"
-    os_rcs_type: "git"
-    os_src: "git@github.com:bencentra/centrarium.com.git"
+    # os_repo: "https://github.com/bencentra/centrarium.com"
+    # os_rcs_type: "git"
+    # os_src: "git@github.com:bencentra/centrarium.com.git"

@@ -3,6 +3,7 @@ layout: default
 ---
 
 {% for page in site.categories[page.category] %}
+<li><a class="fancy-nav" href="{{ site.baseurl }}/categories/{{ link | first }}">{{ link | first}} ({{link | last | size}})</a></li>
 {% include articles.html %}
 {% endfor %}
 

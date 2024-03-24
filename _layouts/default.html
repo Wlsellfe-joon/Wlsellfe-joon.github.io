@@ -1,22 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-{% include head.html %}
-<body style="background: url('{{ site.baseurl }}/resources/images/Sea_background.jpg') no-repeat fixed;
-                            background-size: cover">
-<div id="wrapper">
+<html>
+
+  {% include head.html %}
+
+  <body>
+
     {% include header.html %}
-    <main id="start">
-        <div class="articles">
-            {{ content }}
-        </div>
-    </main>
-        {% include paginator.html %}
-    <footer>
-        {% include footer.html %}
-    </footer>
-</div>
-{% if site.disqus %}
-<script id="dsq-count-scr" src="//{{ site.disqus }}.disqus.com/count.js" async></script>
-{% endif %}
-</body>
+
+    <div class="page-content">
+        {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
 </html>

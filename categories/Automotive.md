@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: category
 title: "Automotive"
 permalink: /Automotive/
 main_nav: true

@@ -4,6 +4,7 @@ title: "Contents"
 permalink: /contents/
 main_nav: true
 ---
+<!-- main_nav: 윗쪽 메뉴바에 표시할 것인지 아닌지? true or false -->
 
 {% for category in site.categories %}
   {% capture cat %}{{ category | first }}{% endcapture %}

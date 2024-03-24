@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Automotive"
 permalink: /Automotive/
 main_nav: true

@@ -2,7 +2,10 @@
 layout: page
 ---
 
+{% for category in site.categories[page.category] %}
 
+
+<!-- 
 {% for category in site.categories[page.category] %}
   {% capture cat %}{{ category | first }}{% endcapture %}
   <h2 id="{{cat}}">{{ cat | capitalize }}</h2>
@@ -23,4 +26,4 @@ layout: page
   </ul>
   {% if forloop.last == false %}<hr>{% endif %}
 {% endfor %}
-<br>
+<br> -->

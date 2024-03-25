@@ -6,8 +6,8 @@ layout: page
   <li><a href="{{ site.baseurl }}/categories/{{ category | first }}">{{ category | first }}</a></li>
 {% endfor %}
 
-<!-- 
-{% for category in site.categories[page.category] %}
+
+<!-- {% for category in site.categories %}
   {% capture cat %}{{ category | first }}{% endcapture %}
   <h2 id="{{cat}}">{{ cat | capitalize }}</h2>
   {% for desc in site.descriptions %}

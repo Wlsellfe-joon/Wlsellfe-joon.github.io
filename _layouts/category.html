@@ -3,7 +3,7 @@ layout: page
 ---
 
 {% for category in site.categories[page.category] %}
-  <li><a href="{{ site.baseurl }}/categories/{{ category | first }}"></a></li>
+  <li><a href="{{ site.baseurl }}/categories/{{ category | first }}">{{ category | first }}</a></li>
 {% include articles.html %}
 {% endfor %}
 

@@ -43,7 +43,8 @@ p {
 }
 
 a {
-  color: $action-color;
+  /*color: $action-color;*/
+  color: #000000; // Main color of text
   text-decoration: none;
   // transition: color 0.1s linear;
 

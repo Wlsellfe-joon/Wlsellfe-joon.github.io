@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[gitblog_01] Jekyll theme, Error 수정 기록"
+title:  "Gitblog 01 Jekyll theme"
 date:   2024-03-29
 author: Yongjun Kim
 categories: Debugging

@@ -4,7 +4,7 @@ title:  "CAN Protocol 01"
 date:   2024-04-07
 author: Yongjun Kim
 categories: Automotive
-tags:	In-Vehicle-Network CAN CAN-bus
+tags:	In-Vehicle-Network CAN CAN-bus CRC BitStuffing
 cover:  "/assets/korea_river_byKYJ.jpg"
 ---
 
@@ -34,3 +34,24 @@ CAN-H & L 는 종단에 각각 120ohm의 저항을 가지고 있어 두개 전�
 <img src="/assets/posts/CANPacket(From_Wikipedia).png" width="800" height="250" title="CAN Packet info">
 이미지 출처: [<u>CAN Bus</u>](https://en.wikipedia.org/wiki/CAN_bus#References)
 
+- SOF & EOF: Start of Frame & End of Frame
+- Arbitration: CAN Bus는 Broadcasting 방식으로 통신하기 때문에 여러 Packets 간에 충돌 방지 Rule이 필요하다. 이때 해당 Field 값을 기반으로 중재 규칙이 동작한다. 해당 Field값이 낮을 수록 높은 우선순위를 가져, '0'은 우성, '1'은 열성으로 동작한다. (e.g., A: 0x0110101 & B: 0x0110100 -> A 와 B 중에서 B가 우선순위를 가지므로 B가 통신된다)
+> - RTR: 해당 Frame이 Remote frame 인가?
+
+- Control: 
+> - IDE: 해당 Frame이 Extended인가?
+> - r0: Reserved
+> - DLC: Data(Payload) section의 Length
+- Data: Payloads
+- CRC: Cyclic Redundancy Check (Error handling)
+- Ack: 응답 Field
+
+### 2.2 Bit Stuffing
+2.1에서 살펴본 것 처럼 Data Frame의 중간 중간에 Stuff bit가 있는데, CAN Protocol은 NRZ (None Return to Zero) Encoding 방식을 차용하므로 수신자가 같은 값으로 특정 갯수 이상의 bit를 수신하면 에러가 있다고 판단한다. 따라서 같은 값의 bit가 5번 이상 반복될 경우 그에 대한 Inverse값을 Stuffing bit로 추가하여 전송하게 된다.
+
+> (e.g., 2.1의 DataFrame)<br>
+> - ID1(0) ID0(0) RTR(0) IDE(0) R0(0) : 5번 '0' bit 가 수신됐으므로, Stuffing bit (1)을 추가하여 송신한다.
+> - (Cf) Encoding 방식 참고<br>NRZ, 맨체스터, 바이페이즈 방식
+<br><br>
+
+### 2.3 CRC에 관하여

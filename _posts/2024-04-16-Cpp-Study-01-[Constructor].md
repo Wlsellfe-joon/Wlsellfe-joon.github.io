@@ -5,5 +5,5 @@ date:   2024-04-16
 author: Yongjun Kim
 categories: Languages
 tags:	C++ Cpp Constructor Destructor
-cover:  "/assets/korea_river_byKYJ.jpg"
+cover:  "/assets/korea_river_byKYJ_gray.jpg"
 ---

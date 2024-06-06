@@ -23,7 +23,7 @@ description: >
 # root of your server.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
-cover: "/assets/korea_river_byKYJ_gray_UP.jpg"
+cover: "/assets/korea_river_byKYJ.jpg"
 logo: "/assets/WJ_logo.svg"
 
 # Build settings

@@ -5,7 +5,7 @@ date:   2024-03-29
 author: Yongjun Kim
 categories: Gitblog
 tags:	github gitblog jekyll ruby
-cover:  "/assets/korea_river_byKYJ.jpg"
+cover:  "/assets/korea_river_byKYJ_gray.jpg"
 ---
 
 ## Gitblog 만들기 (1)

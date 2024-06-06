@@ -5,7 +5,7 @@ date:   2024-04-07
 author: Yongjun Kim
 categories: Automotive
 tags:	In-Vehicle-Network CAN CAN-bus CRC BitStuffing
-cover:  "/assets/korea_river_byKYJ.jpg"
+cover:  "/assets/korea_river_byKYJ_gray.jpg"
 ---
 
 자동차는 다양한 차량용 네트워크(In-Vehicle Networks)로 구성돼 있다. 차량용 네트워크의 구성, 종류, 등은 모두 OEM(Original Equipment Manufacturer)에 따라 상이하며 여기서 OEM이란 완성차 제조업체(현대, 벤츠, BMW.. 등등)를 의미한다. 

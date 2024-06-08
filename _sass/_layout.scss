@@ -143,6 +143,8 @@ pre code.hljs {
   	@include outer-container;
     @include clearfix;
     position: relative;
+	max-width: 1000px; // Menu bar size here
+    margin: 0 auto; 
   }
   .logo {
     float: left;
@@ -219,7 +221,9 @@ pre code.hljs {
 	margin-top: 66px;
 	.wrapper {
 		@include outer-container;
-		padding: 1em;
+		padding: 0.5em;
+		max-width: 1000px; // Main page width
+		margin: 0 auto;
 	}
 	/*
 	*	index.html
@@ -239,7 +243,8 @@ pre code.hljs {
 		}
 		.post-categories {
 			@include span-columns(6);
-			margin-right: 0;
+			margin-right: 0px;
+			//float: right;
 			text-align: right;
 			font-size: 0.9em;
 		}
@@ -279,6 +284,7 @@ pre code.hljs {
 	*	Posts
 	*/
 	.post {
+
 		ul {
 			margin-bottom: 1em;
 		}
@@ -345,6 +351,7 @@ pre code.hljs {
 	*	Pages
 	*/
 	.page {
+	
 		.post-header {
 			padding: 0.5em 1em 1em 1em;
 			text-align: center;

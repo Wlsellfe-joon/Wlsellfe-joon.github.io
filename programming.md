@@ -1,8 +1,8 @@
 ---
 layout: category
-title: "Languages"
-permalink: /Languages/
-category: Languages
+title: "Programming"
+permalink: /Programming/
+category: Programming
 main_nav: true
 ---
 <!-- main_nav: showing in the menu bar? true or false -->

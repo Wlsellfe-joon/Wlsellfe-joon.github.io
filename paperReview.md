@@ -3,5 +3,5 @@ layout: category
 title: "PaperReview"
 permalink: /PaperReview/
 category: PaperReview
-main_nav: true
+main_nav: false
 ---

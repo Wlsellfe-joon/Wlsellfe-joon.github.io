@@ -3,5 +3,5 @@ layout: category
 title: "ANNs"
 permalink: /ANNs/
 category: ANNs
-main_nav: true
+main_nav: false
 ---

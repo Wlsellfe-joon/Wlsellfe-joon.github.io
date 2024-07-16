@@ -57,12 +57,12 @@ CAN-H & L 는 종단에 각각 120ohm의 저항을 가지고 있어 두개 전�
 ### 2.3 CRC에 관하여
 CRC(Cyclic redundancy check)는 데이터 전송 시, 전송된 데이터에 오류가 있는지 없는지를 확인하기 위한 에러 검증방식 중 하나로, 기본적으로 사용하는 Field, Data에 따라 서로 다른 수의 bit CRC를 사용한다. CAN 통신의 경우 15bit의 CRC를 사용한다.<br><br>
 
-송신측은 Bit stuffing은 고려하지 않고 Payloads의 CRC를 계산하여 Data에 함께 붙여 송신하고, 수신측은 이를 수신하여 에러가 있는지 CRC를 통해 검증한다. 보통 Real-time 연산 보다는 미리 연산된 Table을 이용하는 방식으로 검증한다.
+송신측은 Bit stuffing은 고려하지 않고 Payloads의 CRC를 계산하여 Data에 함께 붙여 송신하고, 수신측은 이를 수신하여 에러가 있는지 CRC를 통해 검증한다. 보통 Real-time 연산 보다는 미리 연산된 Table을 이용하는 방식으로 검증한다.<br><br>
 
-- CRC 생성(Tx):
-> - 사용하는 Data, Bit 수마다 상이한 CRC, Polynomial을 사용.
-> - CAN의 경우 15bits의 CRC & 0x4599 Polynomial 사용.
-> - Polynomial의 종류 (3가지): MSB 우선 코드, LSB 우선코드, Koopman (여기서는 MSB 우선 방식 적용)<br>
+#### 2.3.1 CRC 생성(Tx):
+- 사용하는 Data, Bit 수마다 상이한 CRC, Polynomial을 사용.
+- CAN의 경우 15bits의 CRC & 0x4599 Polynomial 사용.
+- Polynomial의 종류 (3가지): MSB 우선 코드, LSB 우선코드, Koopman (여기서는 MSB 우선 방식 적용)<br>
 
 > 1) CAN에서 사용하는 CRC Polynomial = 100 0101 1001 1001 (0x4599)<br>
 > 2) 15bit에 해당하는 CRC를 표현해주기 위해 MSB에 1을 추가<br>
@@ -71,21 +71,21 @@ CRC(Cyclic redundancy check)는 데이터 전송 시, 전송된 데이터에 오
 > 5) 전에 생성한 Polynomial으로 해당 Data를 계속해서 나누는 과정을 반복<br>
 > 6) 나누는 과정: XOR연산<br><br>
 
-- CRC 검증(Rx):
-> - 수신한 Data와 CRC에 대해 다시한번 Polynomial로 XOR 연산 수행
-> - 최종 나머지가 '0'인 경우 에러 없음!
+#### 2.3.2 CRC 검증(Rx):
+- 수신한 Data와 CRC에 대해 다시한번 Polynomial로 XOR 연산 수행
+- 최종 나머지가 '0'인 경우 에러 없음!
 
-- 참고사항:
-> - CAN은 Hamming Distance '6'을 가지므로 6-1=5, 즉 5개 bit에 대해 100% 에러 탐지가 가능하다.
-> - Rx에서 검증한 후에 Ack를 전송.
-> - CRC는 15bit를 가지며, 이후 구분자(Delimiter) 1bit과 함께 총 16bit가 전송된다.
-> - CRC delimiter이후엔 ACK와, 항상 열성인 ACK delimiter가 따라온다.
-> - CRC에서 사용하는 bit수가 1일때, 즉 사용하는 다항식(Polynomial)이 "x+1"인 경우를 우리는 "Parity Bit"라고 한다
-> - Parity bit는 짝수/홀수 방식으로도 설명 가능하다.
+#### 2.3.3 참고사항:
+- CAN은 Hamming Distance '6'을 가지므로 6-1=5, 즉 5개 bit에 대해 100% 에러 탐지가 가능하다.
+- Rx에서 검증한 후에 Ack를 전송.
+- CRC는 15bit를 가지며, 이후 구분자(Delimiter) 1bit과 함께 총 16bit가 전송된다.
+- CRC delimiter이후엔 ACK와, 항상 열성인 ACK delimiter가 따라온다.
+- CRC에서 사용하는 bit수가 1일때, 즉 사용하는 다항식(Polynomial)이 "x+1"인 경우를 우리는 "Parity Bit"라고 한다
+- Parity bit는 짝수/홀수 방식으로도 설명 가능하다.
 
 
-- 정리:
-> - DataFrame = ~skip~ + Data Field + CRC + CRC delimiter + ACK + ACK delimiter<br><br>
+### 2.4 정리:
+- DataFrame = ~skip~ + Data Field + CRC + CRC delimiter + ACK + ACK delimiter<br><br>
 
 ## 3. Reference
 [1] https://www.can-cia.org/can-knowledge/can/crc/<br>

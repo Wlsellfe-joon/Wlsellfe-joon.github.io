@@ -60,16 +60,16 @@ CAN Protocol 공격방식은 대부분 Identifier의 우선순위 취약점을 �
 
 ### 03. Result
 논문에서 제시하는 평가 항목은 세가지이다.<br>
-1) 얼마나 공격을 잘 막는지?
-2) CAN Transmission function 분석이 잘 됐는지?
-3) ECU 성능에 영향을 미치는지?
+1) 얼마나 공격을 잘 막는지?<br>
+2) CAN Transmission function 분석이 잘 됐는지?<br>
+3) ECU 성능에 영향을 미치는지?<br>
 
 논문에서는 Impersonation attack을 실행하여 (1) 항목에 대해 잘 탐지하고 있는 부분을 제시하고 있고,<br>
 
 (2) 항목에서는 fusEFI, ms3, and Styreenhet 3가지 ECU를 분석하며 정확도를 평가하고 있다. 
 <img src="/assets/posts/PR01/Result01.PNG" width="500" height="400" title="Authenticator02"><br>
 
-마지막을 (3) 항목에 대해서는 Runtime CDF와 HMAC Overhead를 평가 척도로 제시한다. Figure12와 같이 43%의 인증 패킷은 wait time 없이 수신되었고, HMAC 연산 또한 ECU CAN transmission 주기가 1.5ms인데 반해 약 4micro sec정도 소요 되었다.
+마지막 (3) 항목에 대해서는 Runtime CDF와 HMAC Overhead를 평가 척도로 제시한다. Figure12와 같이 43%의 인증 패킷은 wait time 없이 수신되었고, HMAC 연산 또한 ECU CAN transmission 주기가 1.5ms인데 반해 약 4micro sec정도 소요 되었다.
 <img src="/assets/posts/PR01/Result02.PNG" width="500" height="400" title="Authenticator02"><br>
 
 결론적으로, 모든 평가항목을 종합해 봤을때, 큰 부하를 야기하지 않으면서 안전한 인증 메커니즘을 CAN Protocol에 추가할 수 있는 방법론이라 할 수 있다.

@@ -4,7 +4,7 @@ title:  "CAN Protocol 02 - [Paper Review 01]"
 date:   2024-07-16
 author: Yongjun Kim
 categories: Automotive
-tags:	In-Vehicle-Network CAN CAN-bus
+tags:	In-Vehicle-Network CAN CAN-bus PaperReview ShadowAuth
 cover:  "/assets/korea_river_byKYJ_gray.jpg"
 ---
 

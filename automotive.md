@@ -3,6 +3,6 @@ layout: category
 title: "Automotive"
 permalink: /Automotive/
 category: Automotive
-main_nav: true
+main_nav: false
 ---
 

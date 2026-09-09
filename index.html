@@ -19,12 +19,12 @@ pagination:
 <div class="wrapper">
   <ul class="post-list">
     {% for post in paginator.posts %}
-    <li>
+    <li class="post-card">
       <h2>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
       <section class="post-excerpt" itemprop="description">
-        <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+        <p>{{ post.excerpt | default: post.content | strip_html | normalize_whitespace | truncatewords: 32 }}</p>
       </section>
       <section class="post-meta">
         <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
@@ -48,8 +48,8 @@ pagination:
 <!-- This section is showing only titles on the home page -->
 <!-- <ul class="post-list">
   {% for post in site.posts %}
-  <li>
-    <h2>
+  <li class="post-card">
+      <h2>
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h2>
   </li>

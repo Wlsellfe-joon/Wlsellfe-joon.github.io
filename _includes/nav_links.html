@@ -1,5 +1,4 @@
-{% for page in site.pages %}
-	{% if page.title and page.main_nav == true %}
-	<li class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-	{% endif %}
-{% endfor %}
+<li class="nav-link"><a href="{{ '/' | prepend: site.baseurl }}">Index</a></li>
+<li class="nav-link"><a href="{{ '/development/' | prepend: site.baseurl }}">Engineering</a></li>
+<li class="nav-link"><a href="{{ '/travel/' | prepend: site.baseurl }}">Field Notes</a></li>
+<li class="nav-link"><a href="{{ '/about/' | prepend: site.baseurl }}">About</a></li>

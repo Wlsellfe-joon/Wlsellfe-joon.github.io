@@ -1,15 +1,15 @@
 <header class="navigation" role="banner">
   <div class="navigation-wrapper">
-    <a href="{{ site.baseurl }}/" class="logo">
+    <a href="{{ site.baseurl }}/" class="logo" aria-label="{{ site.title }} home">
       {% if site.logo %}
       <img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
       {% else %}
       <span>{{ site.title }}</span>
       {% endif %}
     </a>
-    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+    <button type="button" class="navigation-menu-button" id="js-mobile-menu" aria-label="Open navigation" aria-controls="js-navigation-menu" aria-expanded="false">
       <i class="fa fa-bars"></i>
-    </a>
+    </button>
     <nav role="navigation">
       <ul id="js-navigation-menu" class="navigation-menu show">
 				{% include nav_links.html %}

@@ -13,11 +13,11 @@ exclude:
 
 # Site settings
 title: Wlsellfe Joon
-subtitle: "Technical Blog"
+subtitle: "Systems, security, and notes from the road."
 email: kyj20177@gmail.com
 name: Yongjun Kim
 description: >
-  Automotive security, Artificial_DNN, and C/C++/C#/Python.
+  Engineering notes on software, automotive security, artificial intelligence, and life beyond the desk.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.

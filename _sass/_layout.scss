@@ -595,6 +595,17 @@ code, pre, kbd, samp { font-family: "IBM Plex Mono", Consolas, monospace; }
 .empty-state { background: transparent; border: 1px solid var(--line); border-radius: 0; }
 .empty-state-mark { display: block; margin-bottom: .8rem; color: var(--accent); font-family: "DM Serif Display", serif; font-size: 1.8rem; }
 .site-footer { background: #24221f; }
+.home .home-feed { max-width: 1000px; }
+.home .post-list { display: flex; flex-direction: column; gap: 0; padding-top: 2rem !important; }
+.home .post-card { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; width: 100%; min-height: 1cm; padding: .2rem 0; box-sizing: border-box; }
+.home .post-card h2 { min-width: 0; margin: 0; font-family: "DM Sans", "Noto Sans KR", sans-serif; font-size: 1rem; font-weight: 600; line-height: 1.25; }
+.home .post-link { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.home .post-excerpt { display: none; }
+.home .post-meta { justify-content: flex-end; gap: .8rem; margin-left: 1.5rem; white-space: nowrap; }
 @media (max-width: $tablet) {
   .navigation li.nav-link a { margin: 0; padding: .55rem .75rem; }
+  .home .post-card { grid-template-columns: minmax(0,1fr) auto; padding: .3rem 0; }
+  .home .post-card h2 { font-size: .95rem; }
+  .home .post-meta { flex-direction: row; gap: 0; margin-left: .75rem; }
+  .home .post-categories { display: none; }
 }

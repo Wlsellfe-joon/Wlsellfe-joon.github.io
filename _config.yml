@@ -52,7 +52,7 @@ defaults:
 #   sort_field: "date"
 #   sort_reverse: true
 #   title: ":title - page :num"
-paginate: 5
+paginate: 20
 paginate_path: "/page:num/"
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)

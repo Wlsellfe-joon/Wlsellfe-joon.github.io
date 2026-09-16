@@ -22,7 +22,7 @@ description: >
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+url: "https://wlsellfe-joon.github.io" # the base hostname & protocol for your site
 cover: "/assets/korea_river_byKYJ.jpg"
 logo: "/assets/WJ_logo.svg"
 
@@ -30,6 +30,18 @@ logo: "/assets/WJ_logo.svg"
 markdown: kramdown
 inter_post_navigation: false
 highlightjs_theme: "monokai-sublime"
+
+# Defaults for Bible posts placed in _posts/Bible.
+defaults:
+  - scope:
+      path: "_posts/Bible"
+      type: posts
+    values:
+      layout: post
+      author: Yongjun Kim
+      categories:
+        - Bible
+      cover: "/assets/korea_river_byKYJ_gray.jpg"
 
 # Pagination Settings
 # https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration

@@ -72,6 +72,11 @@
   <!-- Site styles -->
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  {% if page.translation_ko and page.translation_en %}
+  <link rel="alternate" hreflang="ko" href="{{ page.translation_ko | absolute_url }}">
+  <link rel="alternate" hreflang="en" href="{{ page.translation_en | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ page.translation_ko | absolute_url }}">
+  {% endif %}
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 	
 	<!-- Tooltips -->

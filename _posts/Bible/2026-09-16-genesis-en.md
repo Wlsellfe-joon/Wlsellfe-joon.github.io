@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Genesis: Summary, Authorship, Archaeology, and Science"
+title: "Genesis - English"
 date: 2026-09-16
 author: "Yongjun Kim"
 categories: Bible

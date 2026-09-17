@@ -5,8 +5,6 @@ permalink: /bible/
 main_nav: false
 lang: ko
 ---
-<p class="section-intro">성경 각 권과 본문을 읽고 연구하며 기록한 글입니다.</p>
-
 {% assign bible_posts = site.categories.Bible %}
 {% if bible_posts and bible_posts.size > 0 %}
 <ul class="posts-list category-posts">
